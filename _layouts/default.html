@@ -2,15 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/style.css">
   </head>
   <body>
     <header>
-      <h1>Test Page</h1>
+      <h1>Kasper Müller</h1>
       <nav>
         <a href="/">Home</a>
         <a href="/blog/">Blog</a>
+        <a href="/projects/">Projects</a>
+        <search-bar></search-bar>
       </nav>
     </header>
     <h1>{{ page.title }}</h1>
@@ -18,7 +21,19 @@
       {{ content }}
     </section>
     <footer>
-      Kasper Müller - 2019
+      &copy; Kasper Müller - 2019
+      <script>
+        (function() {
+          var cx = '004204208404370713121:v9qicrro9ku';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
     </footer>
   </body>
 </html>
